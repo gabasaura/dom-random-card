@@ -89,7 +89,7 @@ window.onload = function() {
   });
 
   heightInput.addEventListener("input", function() {
-    updateCardSize(widthInput.value, heightInput.value);
+    updateCardSize(widthInput.value + "px", heightInput.value + "px");
   });
 
   const randomCard = generateRandomCard();
