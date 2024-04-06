@@ -85,11 +85,11 @@ window.onload = function() {
   startInterval();
 
   widthInput.addEventListener("input", function() {
-    updateCardSize(widthInput.value, heightInput.value);
+    updateCardSize(widthInput.value + "px");
   });
 
   heightInput.addEventListener("input", function() {
-    updateCardSize(widthInput.value + "px", heightInput.value + "px");
+    updateCardSize(heightInput.value + "px");
   });
 
   const randomCard = generateRandomCard();
